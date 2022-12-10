@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     position: relative;
 
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .what-we-offer__header,
@@ -44,6 +44,17 @@ section:nth-of-type(even) {
 section:nth-of-type(odd) {
     color: black;
     background: white;
+}
+
+.caff__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+#logo {
+  width: 80%;
 }
 
 /* SWIPER */
