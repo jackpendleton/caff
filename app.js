@@ -1,16 +1,22 @@
-const swiper = new Swiper('.swiper', {
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
+const whatWeOfferSwiper = new Swiper('.what-we-offer__swiper', {
     loop: true,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
 
-    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+
+const aboutUsSwiper = new Swiper('.about-us__swiper', {
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
     scrollbar: {
         el: '.swiper-scrollbar',
     },

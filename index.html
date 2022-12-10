@@ -19,7 +19,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="caff__logo-container" id="logo-container-b" aria-hidden="true">
                 <div class="logo-wrapper">
                     <div class="caff__logo">
@@ -43,7 +42,6 @@
 
             <div class="what-we-offer__swiper swiper">
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <h2>Dinner party</h2>
                         <p>
@@ -89,7 +87,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
             </div>
             <p class="what-we-offer__consultation">
@@ -108,21 +105,50 @@
                 our love of food, drinks, service, travel, music and decor to create bespoke, luxury events from the
                 heart.
             </div>
-            <div class="about-us__blurbs">
-                <p class="about-us__mal-blurb">
-                    While working as a head chef of a Michelin-bib Gourmand restaurant, I became fascinated with quality
-                    produce, getting the best from every ingredient and in recent years, growing my own herbs and
-                    vegetables.
-                    <br /><br />
-                    <em>Mal McCafferty</em>
-                </p>
-                <p class="about-us__anna-blurb">
-                    Whether it's been managing a Michelin-recognised restaurant, getting Wine & Spirit Education Trust
-                    (WSET)-qualified, honing cocktail and bar skills in busy venues or working weddings, it's always
-                    been for the love of the party.
-                    <br /><br />
-                    <em>Anna McCafferty</em>
-                </p>
+            <div class="about-us__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="about-us__quote-box swiper-slide">
+                        <div class="about-us__quote">
+                            <img
+                                class="quote-mark quote-mark--left"
+                                src="/public/quote-mark-left.svg"
+                                alt="caff-logo"
+                            />
+                            <p class="about-us__content about-us__content--mal">
+                                While working as a head chef of a Michelin-bib Gourmand restaurant, I became fascinated
+                                with quality produce, getting the best from every ingredient and in recent years,
+                                growing my own herbs and vegetables.
+                            </p>
+                            <img
+                                class="quote-mark quote-mark--right"
+                                src="/public/quote-mark-right.svg"
+                                alt="caff-logo"
+                            />
+                        </div>
+                        <p><em>Mal McCafferty</em></p>
+                    </div>
+                    <div class="about-us__quote-box swiper-slide">
+                        <div class="about-us__quote">
+                            <img
+                                class="quote-mark quote-mark--left"
+                                src="/public/quote-mark-left.svg"
+                                alt="caff-logo"
+                            />
+                            <p class="about-us__content about-us__content--mal">
+                                Whether it's been managing a Michelin-recognised restaurant, getting Wine & Spirit
+                                Education Trust (WSET)-qualified, honing cocktail and bar skills in busy venues or
+                                working weddings, it's always been for the love of the party.
+                            </p>
+                            <img
+                                class="quote-mark quote-mark--right"
+                                src="/public/quote-mark-right.svg"
+                                alt="caff-logo"
+                            />
+                        </div>
+                        <p><em>Anna McCafferty</em></p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
             <p class="about-us__outro">
                 To this day, nothing makes us happier than knowing our customers have 'had a ball'.
@@ -133,16 +159,19 @@
             <div class="get-in-touch__header">
                 <img id="header-logo" src="/public/caff-black.svg" alt="caff-logo" />
                 <h1>Get in touch</h1>
-                <a href="mailto:test@test.com">test@test.com</a> <!--  TODO: real email -->
+                <a class="get-in-touch__email" href="mailto:test@test.com">
+                    <h3>test@test.com</h3>
+                </a>
+                <!--  TODO: real email -->
                 <a href="http://instagram.com/caffcatering">
                     <img id="insta-icon" src="/public/insta.svg" alt="intagram-icon" />
                 </a>
             </div>
             <footer>
                 <span><strong>caff catering ©</strong></span>
-                <br>
+                <br />
                 <span>Belfast, <em>Est. 2022</em></span>
-                <br>
+                <br />
             </footer>
         </section>
         <script src="app.js"></script>

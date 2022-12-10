@@ -23,8 +23,18 @@ header {
 footer {
     position: absolute;
     bottom: 0;
-    padding: 2rem;
+    padding: 32px;
     text-align: center;
+}
+
+section:nth-of-type(even) {
+    color: white;
+    background: black;
+}
+
+section:nth-of-type(odd) {
+    color: black;
+    background: white;
 }
 
 .caff__logo-container {
@@ -57,7 +67,6 @@ footer {
     display: block;
     margin: auto;
     width: 100%;
-    /* center the text wrapper vertically */
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -87,7 +96,7 @@ header,
     flex-direction: column;
     position: relative;
 
-    padding: 0 2rem;
+    padding: 0 32px;
 }
 
 .what-we-offer__header,
@@ -99,15 +108,57 @@ header,
     align-items: center;
 }
 
+.about-us__swiper {
+    margin-top: 32px;
+}
+
+.about-us__quote {
+    position: relative;
+    padding: 20px;
+    text-align: justify;
+}
+
+.about-us__quote > .quote-mark {
+    width: 16px;
+}
+
+.about-us__quote > .quote-mark--left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about-us__quote > .quote-mark--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.about-us__content {
+    margin: 0;
+}
+
+.about-us__outro {
+    margin-top: 16px;
+}
+
 .get-in-touch__header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.get-in-touch__email {
+    text-decoration: none;
+}
+
+.get-in-touch__email > h3 {
+    margin: 0;
+}
+
 #insta-icon {
     margin: 1.5rem;
-    width: 2rem;
+    width: 32px;
 }
 
 #header-logo {
@@ -115,27 +166,23 @@ header,
     width: 50%;
 }
 
-section:nth-of-type(even) {
-    color: white;
-    background: black;
-}
-
-section:nth-of-type(odd) {
-    color: black;
-    background: white;
-}
-
 /* Swiper */
 
 .swiper {
     width: 100%;
     height: auto;
-    margin: 2rem 0;
     cursor: pointer;
 }
 
 .swiper-slide {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+}
+
+.swiper-wrapper {
+    padding-bottom: 32px;
+}
+
+.swiper-wrapper > h2 {
+    margin: 20px 0;
 }
