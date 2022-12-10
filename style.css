@@ -1,49 +1,62 @@
-html, body, section {
-  block-size: 100%;
+html,
+body,
+section {
+    block-size: 100%;
 }
 
 html {
-  scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
+    margin: 0;
+    font-family: system-ui, sans-serif;
 }
 
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.caff,
+.what-we-offer,
+.about-us,
+.get-in-touch {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 
-  padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    padding: 20px;
+}
+
+.what-we-offer__header,
+.about-us__header,
+.get-in-touch__header {
+    position: absolute;
+    top: 0;
 }
 
 section:nth-of-type(even) {
-  color: white;
-  background: black;
+    color: white;
+    background: black;
 }
 
 section:nth-of-type(odd) {
-  color: black;
-  background: white;
+    color: black;
+    background: white;
 }
 
 /* SWIPER */
 
 .swiper {
-  width: 100%;
-  height: auto;
-  margin: 2rem 0;
-  cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    cursor: pointer;
 }
 
 .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
 }
