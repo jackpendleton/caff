@@ -20,6 +20,13 @@ header {
     height: 200vh;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+}
+
 .caff__logo-container {
     clip: rect(0, auto, auto, 0);
     overflow: hidden;
@@ -80,14 +87,32 @@ header,
     flex-direction: column;
     position: relative;
 
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 .what-we-offer__header,
-.about-us__header,
-.get-in-touch__header {
+.about-us__header {
     position: absolute;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-in-touch__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#insta-icon {
+    margin: 1.5rem;
+    width: 2rem;
+}
+
+#header-logo {
+    margin-top: 20px;
+    width: 50%;
 }
 
 section:nth-of-type(even) {
