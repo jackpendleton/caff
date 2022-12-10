@@ -16,11 +16,58 @@ body {
     font-family: system-ui, sans-serif;
 }
 
-.caff {
-    height: 100%;
+header {
+    height: 200vh;
 }
 
-.caff,
+.caff__logo-container {
+    clip: rect(0, auto, auto, 0);
+    overflow: hidden;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    left: 0;
+
+    /* Safari hack */
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+}
+
+#logo-container-a {
+    /* white background, black logo */
+    background: white;
+    top: 0;
+}
+
+#logo-container-b {
+    /* black background, white logo */
+    background-color: black;
+    top: 100vh;
+}
+
+.logo-wrapper {
+    position: fixed;
+    display: block;
+    margin: auto;
+    width: 100%;
+    /* center the text wrapper vertically */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.caff__logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#logo {
+    width: 80%;
+}
+
+header,
 .what-we-offer,
 .about-us,
 .get-in-touch {
@@ -53,17 +100,7 @@ section:nth-of-type(odd) {
     background: white;
 }
 
-.caff__logo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-#logo {
-  width: 80%;
-}
-
-/* SWIPER */
+/* Swiper */
 
 .swiper {
     width: 100%;
