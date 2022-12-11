@@ -58,7 +58,7 @@ section:nth-of-type(odd) .swiper-pagination-bullet-active {
 }
 
 .section-content {
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .caff__logo-container {
@@ -223,6 +223,10 @@ header,
 
     .header-logo {
         width: 75%;
+    }
+
+    .section-content {
+        max-width: 800px;
     }
 }
 
