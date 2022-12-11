@@ -32,9 +32,29 @@ section:nth-of-type(even) {
     background: black;
 }
 
+section:nth-of-type(even) .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid white;
+    opacity: 1;
+}
+
+section:nth-of-type(even) .swiper-pagination-bullet-active {
+    background: white;
+}
+
 section:nth-of-type(odd) {
     color: black;
     background: white;
+}
+
+section:nth-of-type(odd) .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+section:nth-of-type(odd) .swiper-pagination-bullet-active {
+    background: black;
 }
 
 .section-content {
