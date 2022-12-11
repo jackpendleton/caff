@@ -37,6 +37,10 @@ section:nth-of-type(odd) {
     background: white;
 }
 
+.section-content {
+    max-width: 800px;
+}
+
 .caff__logo-container {
     clip: rect(0, auto, auto, 0);
     overflow: hidden;
@@ -161,7 +165,7 @@ header,
     width: 32px;
 }
 
-#header-logo {
+.header-logo {
     margin-top: 20px;
     width: 50%;
 }
@@ -185,4 +189,23 @@ header,
 
 .swiper-wrapper > h2 {
     margin: 20px 0;
+}
+
+/* Small devices (mobile phones, 320px and below) */
+@media only screen and (max-width: 320px) {
+}
+
+/* Medium devices (landscape tablets, 768px and above) */
+@media only screen and (min-width: 768px) {
+    .splash-logo {
+        width: 25%;
+    }
+
+    .header-logo {
+        width: 75%;
+    }
+}
+
+/* Large devices (desktop monitors, 1200px and above) */
+@media only screen and (min-width: 1200px) {
 }
