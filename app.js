@@ -23,6 +23,7 @@ const aboutUsSwiper = new Swiper('.about-us__swiper', {
 });
 
 const jumpTo = anchor_id => {
+    document.log('JUMP')
     var url = location.href;
     location.href = '#' + anchor_id;
     history.replaceState(null, null, url);
