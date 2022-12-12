@@ -21,3 +21,9 @@ const aboutUsSwiper = new Swiper('.about-us__swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+const jumpTo = anchor_id => {
+    var url = location.href;
+    location.href = '#' + anchor_id;
+    history.replaceState(null, null, url);
+};
