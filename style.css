@@ -60,10 +60,6 @@ section:nth-of-type(odd) .swiper-pagination-bullet-active {
     background: black;
 }
 
-p {
-    font-size: 4vw;
-}
-
 .section-content {
     height: 100%;
     max-width: calc(100% - 64px);
@@ -281,10 +277,20 @@ footer {
     filter: grayscale(0%);
 }
 
+@media (orientation: portrait) {
+    p {
+        font-size: 4vw;
+    }
+}
+
 /* Small devices (mobile phones, 320px and below) */
 @media only screen and (max-width: 320px) {
     .what-we-offer h2 {
         font-size: 6vw;
+    }
+
+    .what-we-offer__intro p {
+        display: none;
     }
 
     .what-we-offer .swiper-slide p {
