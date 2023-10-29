@@ -341,10 +341,10 @@ footer {
     .what-we-offer__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 10px;
         grid-auto-rows: minmax(100px, auto);
         width: min-content;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .flip-card {
